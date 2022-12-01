@@ -5,198 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Solid Template</title>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
-	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <title>Camp Registration</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <style>
-      html, body {
-      min-height: 100%;
-      }
-      h1 {
-      position: absolute;
-      margin: 0;
-      font-size: 40px;
-      color: #fff;
-      z-index: 2;
- line-height: 83px;
-      }
-      textarea {
-      width: calc(100% - 12px);
-      padding: 5px;
-      }
-      .testbox {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: inherit;
-      padding: 20px;
-      }
-      .banner {
-      position: relative;
-      height: 300px;
-      background-image: url("/uploads/media/default/0001/02/e2502bb5e1dab7d5cc9b011c745033821aad632c.jpeg");  
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      }
-      .banner::after {
-      content: "";
-      background-color: rgba(0, 0, 0, 0.2); 
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      }
-      input, select, textarea {
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      }
-      input {
-      width: calc(100% - 10px);
-      padding: 5px;
-      }
-      input[type="date"] {
-      padding: 4px 5px;
-      }
-      textarea {
-      width: calc(100% - 12px);
-      padding: 5px;
-    }
-      .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
-      color:  #006622;
-      }
-      .item input:hover, .item select:hover, .item textarea:hover {
-      border: 1px solid transparent;
-      box-shadow: 0 0 3px 0  #006622;
-      color: #006622;
-      }
-      .item {
-      position: relative;
-      margin: 10px 0;
-      }
-      .item span {
-      color: red;
-      }
-      input[type="date"]::-webkit-inner-spin-button {
-      display: none;
-      }
-      .item i, input[type="date"]::-webkit-calendar-picker-indicator {
-      position: absolute;
-      font-size: 20px;
-      color: #00b33c;
-      }
-      .item i {
-      right: 1%;
-      top: 30px;
-      z-index: 1;
-      }
- .week {
-      display:flex;
-      justfiy-content:space-between;
-      }
-      .colums {
-      display:flex;
-      justify-content:space-between;
-      flex-direction:row;
-      flex-wrap:wrap;
-      }
-      .colums div {
-      width:48%;
-      }
-      [type="date"]::-webkit-calendar-picker-indicator {
-      right: 1%;
-      z-index: 2;
-      opacity: 0;
-      cursor: pointer;
-      }
-      input[type=radio], input[type=checkbox]  {
-      display: none;
-      }
-      label.radio {
-      position: relative;
-  display: inline-block;
-      margin: 5px 20px 15px 0;
-      cursor: pointer;
-      }
-      .question span {
-      margin-left: 30px;
-      }
-      .question-answer label {
-      display: block;
-      }
-      label.radio:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 17px;
-      height: 17px;
-      border-radius: 50%;
-      border: 2px solid #ccc;
-      }
-      input[type=radio]:checked + label:before, label.radio:hover:before {
-      border: 2px solid  #006622;
-      }
-      label.radio:after {
-      content: "";
-      position: absolute;
-      top: 6px;
-      left: 5px;
-      width: 8px;
-      height: 4px;
-      border: 3px solid  #006622;
-      border-top: none;
-      border-right: none;
-      transform: rotate(-45deg);
-      opacity: 0;
-      }
-      input[type=radio]:checked + label:after {
-      opacity: 1;
-      }
-      .flax {
-      display:flex;
-      justify-content:space-around;
-      }
-      .btn-block {
-      margin-top: 10px;
-      text-align: center;
-      }
-      button {
-      width: 150px;
-      padding: 10px;
-      border: none;
-      border-radius: 5px; 
-      background:  #006622;
-      font-size: 16px;
-      color: #fff;
-cursor: pointer;
-      }
-      button:hover {
-      background:  #00b33c;
-      }
-      @media (min-width: 568px) {
-      .name-item, .city-item {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      }
-      .name-item input, .name-item div {
-      width: calc(50% - 20px);
-      }
-      .name-item div input {
-      width:97%;}
-      .name-item div label {
-      display:block;
-      padding-bottom:5px;
-      }
-      }
-    </style>
 </head>
+<style>body {
+    background-color: #1d2026;
+    }
+    </style>
+
 <body class="is-boxed has-animations">
     <div class="body-wrap">
         <header class="site-header">
@@ -218,49 +32,153 @@ cursor: pointer;
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Order Now</h1>
+	                        <h1 class="hero-title mt-0" style="color:white;">Order Now</h1>
+						</div>
                     </div>
                 </div>
             </section>
-        </main>
-        <div class="testbox">
-            <form   action="https://formspree.io/f/xoqbopnb"
-            method="POST">
-            <br/>
-            <p>Purchase Now.</p>
-            <br/>
-            <div class="colums">
-                <div class="item">
-                <label for="name">Name<span>*</span></label>
-                <input id="name" type="text" name="name" required/>
-                </div>
-                <div class="item">
-                <label for="eaddress">Email Address<span>*</span></label>
-                <input id="eaddress" type="text"   name="eaddress" required/>
-                </div>
-            </div>
-            <div class="question">
-                <label>Are you buying this product for yourself.</label>
-                <div class="question-answer">
-                <div>
-                    <input type="radio" value="none" id="radio_1" name="info"/>
-                    <label for="radio_1" class="radio"><span>Yes</span></label>
-                </div>
-                <div>
-                    <input  type="radio" value="none" id="radio_2" name="info"/>
-                    <label for="radio_2" class="radio"><span>No</span></label>
-                </div>
-                </div>
-            </div>
-            <div class="item">
-                <label for="visit">Other </label>
-                <textarea id="visit" rows="3"></textarea>
-            </div>
-            <div class="btn-block">
-                <button type="submit" href="than">Send</button>
-            </form>
-        </div>
 
-    <script src="dist/js/main.min.js"></script>
+            <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xoqbopnb"
+            method="POST">
+                <fieldset id="fs-frm-inputs">
+                  <label for="full-name" style="color:white;">Full Name</label>
+                  <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                  <label for="email-address" style="color:white;">Email Address</label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                  <fieldset id="fs-frm-selects">
+                    <label for="timely" style="color:white;">Are you purchasing this product for yourself or someone else?</label>
+                    <select name="timely" id="timely" required="">
+                      <option value="" selected="" disabled="">Choose</option>
+                      <option value="1">Myself</option>
+                      <option value="3">Someone else</option>
+                    </select>
+                    <label for="timely" style="color:white;">Would you be willing to test out a prototype?</label>
+                    <select name="quality" id="quality" required="">
+                      <option value="" selected="" disabled="">Choose</option>
+                      <option value="1">Yes</option>
+                      <option value="3">No</option>
+                    </select>
+                    <label for="timely" style="color:white;">How much would you pay for such a product?</label>
+                    <select name="quality" id="quality" required="">
+                      <option value="" selected="" disabled="">Choose</option>
+                      <option value="1">Not interested</option>
+                      <option value="3"> Less than $100</option>
+                      <option value="5">Between $100 and $200</option>
+                      <option value="7">More than $200</option>
+                    </select>
+                  </fieldset>
+                </fieldset>
+                <input type="submit" value="Submit">
+              </form><style>/* reset */
+              #fs-frm input,
+              #fs-frm select,
+              #fs-frm textarea,
+              #fs-frm fieldset,
+              #fs-frm optgroup,
+              #fs-frm label,
+              #fs-frm #card-element:disabled {
+                font-family: inherit;
+                font-size: 100%;
+                color: inherit;
+                border: none;
+                border-radius: 0;
+                display: block;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+              }
+              #fs-frm label,
+              #fs-frm legend,
+              #fs-frm ::placeholder {
+                font-size: .825rem;
+                margin-bottom: .5rem;
+                padding-top: .2rem;
+                display: flex;
+                align-items: baseline;
+              }
+              
+              /* border, padding, margin, width */
+              #fs-frm input,
+              #fs-frm select,
+              #fs-frm textarea,
+              #fs-frm #card-element {
+                border: 1px solid rgba(0,0,0,0.2);
+                background-color: rgba(255,255,255,0.9);
+                padding: .75em 1rem;
+                margin-bottom: 1.5rem;
+              }
+              #fs-frm input:focus,
+              #fs-frm select:focus,
+              #fs-frm textarea:focus {
+                background-color: white;
+                outline-style: solid;
+                outline-width: thin;
+                outline-color: gray;
+                outline-offset: -1px;
+              }
+              #fs-frm [type="text"],
+              #fs-frm [type="email"] {
+                width: 100%;
+              }
+              #fs-frm [type="button"],
+              #fs-frm [type="submit"],
+              #fs-frm [type="reset"] {
+                width: auto;
+                cursor: pointer;
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+              }
+              #fs-frm [type="button"]:focus,
+              #fs-frm [type="submit"]:focus,
+              #fs-frm [type="reset"]:focus {
+                outline: none;
+              }
+              #fs-frm [type="submit"],
+              #fs-frm [type="reset"] {
+                margin-bottom: 0;
+              }
+              #fs-frm select {
+                text-transform: none;
+              }
+              
+              #fs-frm [type="checkbox"] {
+                -webkit-appearance: checkbox;
+                -moz-appearance: checkbox;
+                appearance: checkbox;
+                display: inline-block;
+                width: auto;
+                margin: 0 .5em 0 0 !important;
+              }
+              
+              #fs-frm [type="radio"] {
+                -webkit-appearance: radio;
+                -moz-appearance: radio;
+                appearance: radio;
+              }
+              
+              /* address, locale */
+              #fs-frm fieldset.locale input[name="city"],
+              #fs-frm fieldset.locale select[name="state"],
+              #fs-frm fieldset.locale input[name="postal-code"] {
+                display: inline;
+              }
+              #fs-frm fieldset.locale input[name="city"] {
+                width: 52%;
+              }
+              #fs-frm fieldset.locale select[name="state"],
+              #fs-frm fieldset.locale input[name="postal-code"] {
+                width: 20%;
+              }
+              #fs-frm fieldset.locale input[name="city"],
+              #fs-frm fieldset.locale select[name="state"] {
+                margin-right: 3%;
+              }
+              </style>
+
+        </main>
+        </div>
 </body>
 </html>
